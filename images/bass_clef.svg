@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg1" viewBox="0 0 182.49 99.175" version="1.0">
+  <g id="g846" stroke="#000" fill="none" transform="translate(-86.61 -337.35)">
+    <path id="path838" stroke-width="5.2858" d="m89.253 344.82v89.06"/>
+    <path id="path839" stroke-width="1pt" d="m89.253 345.53l177.07 0.72"/>
+    <path id="path840" stroke-width="1pt" d="m90.693 367.49l177.07 0.72"/>
+    <path id="path842" stroke-width="1pt" d="m91.413 389.26l177.07 0.72"/>
+    <path id="path844" stroke-width="1pt" d="m89.613 411.48l177.07 0.72"/>
+    <path id="path845" stroke-width="1pt" d="m90.333 433.26l177.07 0.72"/>
+  </g>
+  <g id="g869" stroke="#000" fill-rule="evenodd" transform="translate(-81.87 -338.2)">
+    <g id="g858" fill-opacity=".75" stroke-width="1pt" transform="translate(12.215)">
+      <path id="path855" d="m344.57 325.82a4.3262 4.3262 0 1 1 -8.65 0 4.3262 4.3262 0 1 1 8.65 0z" transform="translate(-188.32 32.065)"/>
+      <path id="path857" d="m344.57 325.82a4.3262 4.3262 0 1 1 -8.65 0 4.3262 4.3262 0 1 1 8.65 0z" transform="translate(-189.33 53.441)"/>
+    </g>
+    <g id="g866">
+      <path id="path861" d="m118.08 368.82a8.6524 8.6524 0 1 1 -17.31 0 8.6524 8.6524 0 1 1 17.31 0z" stroke-width="1.252" transform="matrix(1.3977 0 0 1.3977 -44.923 -146.31)" fill-opacity=".75"/>
+      <path id="path864" stroke-width="1pt" d="m95.86 371.63c-5.595-19.5 7.9-32.38 25.69-32.8 18.04-0.42 29.47 15.6 29.86 30.39 0.64 14.79-6.02 26.93-19.5 41.52-11.03 12.16-32.245 21.87-33.821 20.46-1.757-1.41 16.211-9.34 27.391-22.1 6.93-8.1 14.04-25.19 13.44-37.83-1.04-16.66-14.44-26.25-19.67-27.21-3.45-0.71-6.86 0.12-10.18 1.68-2.73 1.33-4.43 3.99-4.5 5.45-0.17 3.2 3.9 5.1 6.12 5.77 8.25 2.49-3.59 23.73-14.83 14.67z"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>bass clef 01</dc:title>
+        <dc:date>2010-04-03T20:28:56</dc:date>
+        <dc:description>Drawing by Jonadab the Unsightly One. From OCAL 0.18 release.</dc:description>
+        <dc:source>http://openclipart.org/detail/36835/bass-clef-01-by-anonymous</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Anonymous</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>music</rdf:li>
+            <rdf:li>symbol</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

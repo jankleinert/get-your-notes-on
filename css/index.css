@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    background: radial-gradient(rgba(54, 17, 69, 1), rgba(48, 20, 59, 1));;
+    font-family: 'Roboto Mono', Arial, sans-serif;
+}
+
+.staff {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.note-info-wrapper {
+    overflow: hidden;
+    height: 50vh;
+}
+
+.note-info {
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: left;
+    transition: 500ms ease;
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 3vw;
+}
+
+.correct {
+    color:rgb(12, 50, 12);
+    filter: invert(50%) sepia(30%) saturate(1000%) hue-rotate(74deg) brightness(50%) contrast(100%);
+}
+
+.wrong {
+    color:rgb(106, 19, 13);
+    filter: invert(20%) sepia(30%) saturate(1500%) brightness(50%) contrast(100%) hue-rotate(300deg) ;
+}
+
+.whole-note {
+    position: relative;
+    left: -200px;
+}
+
+.whole-note-line {
+    position: relative;
+    left: -210px;
+}
+
+.accidental {
+    position: relative;
+    left: -200px;
+    opacity: 0;
+}
+
+.sharp61 {
+    opacity: 1;
+    top: 34px;
+}
+
+.sharp63 {
+    opacity: 1;
+}
+
+.sharp66 {
+    opacity: 1;
+    top: -40px;
+}
+
+.sharp68 {
+    opacity: 1;
+    top: -62px;
+}
+
+.sharp70 {
+    opacity: 1;
+    top: -84px;
+}
+
+.note60, .note61 {
+    top: 12px;
+}
+
+.note62, .note63 {
+    top: -22px;
+}
+
+.note64 {
+    top: -40px;
+}
+
+.note65, .note66 {
+    top: -63px;
+}
+
+.note67, .note68 {
+    top: -84px;
+}
+
+.note69, .note70 {
+    top: -106px;
+}
+
+.note71 {
+    top: -129px;
+}
+
+.note72, .note73 {
+    top: -150px;
+}
+
+.note74, .note75 {
+    top: -171px;
+}
+
+.note76 {
+    top: -193px;
+}
+
+.note77, .note78 {
+    top: -215px;
+}
+
+.note79 {
+    top: -233px;
+}
