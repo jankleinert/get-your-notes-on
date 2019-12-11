@@ -15,10 +15,6 @@ if (navigator.requestMIDIAccess) {
 
 function onMIDISuccess(midiAccess) {
     shuffleArray(level1Notes);
-    /*document.querySelector('.note-info').textContent =  
-        getNoteNameFromNumber(level1Notes[noteIndex]) + 
-        ' (' + level1Notes[noteIndex] + ')';*/
-    document.querySelector('.whole-note').classList.add('note'+level1Notes[noteIndex]);
     drawNote(level1Notes[noteIndex]);
     
     var inputs = midiAccess.inputs;
@@ -36,11 +32,12 @@ function onMIDIFailure() {
 function getMIDIMessage(message) {
     var command = message.data[0];
     var note = message.data[1];
+    var velocity = message.data[2];
 
     switch (command) {
         case 144: // noteOn
             document.querySelector('.note-info').textContent = 'Command: ' + command +
-                ' , Note: ' + note;
+                ' , Note: ' + note + ' , Velocity: ' + velocity;
             noteOnListener(note);
             break;
     }
@@ -62,7 +59,10 @@ function drawNote(noteNum) {
     /** reset sharps, special line notes **/
     document.querySelector(".accidental").classList.remove('sharp61','sharp63', 'sharp66', 'sharp68', 'sharp70');
     document.querySelector("#whole-note").classList.remove('whole-note-line');
+   
+    /* draw basic note */
     document.querySelector("#whole-note").classList.add('whole-note');
+    document.querySelector('.whole-note').classList.add('note'+noteNum);
 
     if (isSharp(noteNum)) {
         document.querySelector(".accidental").classList.add('sharp'+noteNum);
@@ -106,8 +106,6 @@ function isSpecialLineNote(noteNum) {
 }
 
 function noteOnListener(note) {
-    var noteName = getNoteNameFromNumber(note);
-    
     if (note == level1Notes[noteIndex]) {
         document.querySelector('.accidental').classList.add('correct');
         document.querySelector('#whole-note').classList.add('correct');
@@ -124,13 +122,11 @@ function noteOnListener(note) {
             document.querySelector('#whole-note').classList.remove('correct', 'wrong');
             document.querySelector('.note-info').textContent = '';
             document.querySelector('.whole-note').classList.remove('note'+level1Notes[noteIndex-1]);
-            document.querySelector('.whole-note').classList.add('note'+level1Notes[noteIndex]);
             drawNote(level1Notes[noteIndex]);
         } else {
             document.querySelector('.note-info').textContent = 'You played ' + correctNotes + ' out of ' + level1Notes.length + ' notes correctly.';
         }
-    }, 1500);
-    
+    }, 1500);   
 }
 
 function shuffleArray(array) {
