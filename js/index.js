@@ -106,27 +106,34 @@ function isSpecialLineNote(noteNum) {
 }
 
 function noteOnListener(note) {
-    if (note == level1Notes[noteIndex]) {
-        document.querySelector('.accidental').classList.add('correct');
-        document.querySelector('#whole-note').classList.add('correct');
-        correctNotes++;
-    } else {
-        document.querySelector('.accidental').classList.add('wrong');
-        document.querySelector("#whole-note").classList.add('wrong');
-    }
-
-    window.setTimeout(function(){
-        if (noteIndex < level1Notes.length - 1) {
-            noteIndex++;
-            document.querySelector('.accidental').classList.remove('correct', 'wrong');
-            document.querySelector('#whole-note').classList.remove('correct', 'wrong');
-            document.querySelector('.note-info').textContent = '';
-            document.querySelector('.whole-note').classList.remove('note'+level1Notes[noteIndex-1]);
-            drawNote(level1Notes[noteIndex]);
+   /* check for special notes first */
+   if (note >= 41 && note <=47) { // change bg color!
+        var rainbow = ["#d10000", "#ff6622", "#ffda21", "#33dd00", "#1133cc", "#220066", "#330044"];
+        document.querySelector("body").style.background = rainbow[note - 41];
+   } else {
+        if (note == level1Notes[noteIndex]) {
+            document.querySelector('.accidental').classList.add('correct');
+            document.querySelector('#whole-note').classList.add('correct');
+            correctNotes++;
         } else {
-            document.querySelector('.note-info').textContent = 'You played ' + correctNotes + ' out of ' + level1Notes.length + ' notes correctly.';
+            document.querySelector('.accidental').classList.add('wrong');
+            document.querySelector("#whole-note").classList.add('wrong');
         }
-    }, 1500);   
+        window.setTimeout(function(){
+            if (noteIndex < level1Notes.length - 1) {
+                noteIndex++;
+                document.querySelector('.accidental').classList.remove('correct', 'wrong');
+                document.querySelector('#whole-note').classList.remove('correct', 'wrong');
+                document.querySelector('.note-info').textContent = '';
+                document.querySelector('.whole-note').classList.remove('note'+level1Notes[noteIndex-1]);
+                drawNote(level1Notes[noteIndex]);
+            } else {
+                document.querySelector('.note-info').textContent = 'You played ' + correctNotes + ' out of ' + level1Notes.length + ' notes correctly.';
+            }
+        }, 1500); 
+   }
+
+      
 }
 
 function shuffleArray(array) {
